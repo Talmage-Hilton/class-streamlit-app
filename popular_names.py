@@ -35,4 +35,5 @@ with st.sidebar:
     top_names = pd.concat([girls_names.reset_index(drop=True), boys_names.reset_index(drop=True)],
                           ignore_index=True, axis=1)
     top_names.columns = ['Girls','Boys']
+    top_names.index = [1,2,3,4,5]
     st.dataframe(top_names)
